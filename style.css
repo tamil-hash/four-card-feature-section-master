@@ -1,0 +1,72 @@
+body{
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+  color:hsl(234, 12%, 34%);
+    position: relative;
+}
+header{
+  margin: 50px auto;
+  text-align: center;
+  max-width: 500px;
+}
+h1 span{
+  font-weight: 200;
+}
+p{
+  font-size: 14px;
+  color:hsl(229, 6%, 66%);
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.box{
+  background-color: #FFF;
+  width:350px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+  padding: 30px;
+  overflow: hidden;
+}
+.box::after{
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  background-color: purple;
+  height: 5px;
+  top: 0;
+  left:0;
+}
+.cyan::after{
+  background-color:hsl(180, 62%, 55%);
+}
+.red::after{
+  background-color:hsl(0, 78%, 62%);
+}
+.blue::after{
+  background-color:hsl(212, 86%, 64%);
+}
+.yellow::after{
+  background-color: hsl(34, 97%, 64%);
+}
+.push{
+  transform: translateY(50%);
+}
+.box P{
+  margin: 15px 0 30px;
+}
+.box img{
+  display: block;
+  margin-left: auto;
+}
+@media (max-width:915px) {
+  .push{
+    transform: translateY(0);
+  }
+}
